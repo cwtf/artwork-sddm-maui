@@ -161,6 +161,7 @@ Rectangle {
             width: parent.width / 3
             height: parent.height / 5
 
+            /*Date*/
             Text {
                 id: timeText
                 anchors {

@@ -4,8 +4,8 @@ Rectangle {
     id: button
     radius: 5
     color: focus ? "#33000000" : "transparent"
-    width: 30
-    height: 30
+    width: 36
+    height: 36
     property url normalImg: ""
     property url hoverImg: normalImg
     property url pressImg: normalImg
