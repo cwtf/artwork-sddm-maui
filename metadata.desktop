@@ -1,0 +1,12 @@
+[SddmGreeterTheme]
+Name=Maui Plasma
+Description=Maui Plasma SDDM theme.
+Screenshot=
+License=CC-BY-SA
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=maui-plasma
+Theme-API=2.0
