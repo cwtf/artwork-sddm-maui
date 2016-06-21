@@ -166,12 +166,14 @@ Rectangle {
                 id: timeText
                 anchors {
                     left: parent.left
-                    leftMargin: hMargin
+                    leftMargin: 30
                     bottom: dateText.top
                     bottomMargin: 5
                 }
-
-                font.pointSize: 50
+                
+                font.family: "DejaVu Sans"
+                font.pointSize: 80
+                font.weight: Font.ExtraLight
                 color: textColor
 
                 function updateTime() {
@@ -183,16 +185,18 @@ Rectangle {
                 id: dateText
                 anchors {
                     left: parent.left
-                    leftMargin: hMargin
+                    leftMargin: 40
                     bottom: parent.bottom
                     bottomMargin: vMargin
                 }
 
-                font.pointSize: 18
+                font.family: "DejaVu Sans"
+                font.pointSize: 24
+                font.weight: Font.ExtraLight
                 color: textColor
 
                 function updateDate() {
-                    text = new Date().toLocaleString(Qt.locale("en_US"), "yyyy-MM-dd dddd")
+                    text = new Date().toLocaleString(Qt.locale("en_US"), "dddd, dd, MMMM")
                 }
             }
 
@@ -283,7 +287,7 @@ Rectangle {
                     height: m_powerButtonSize
                     visible: true//sddm.canPowerOff
 
-                    normalImg: "icons/switchframe/powermenu.png"
+                    normalImg: "icons/switchframe/powermenu.svg"
                     onClicked: {
                         console.log("Show shutdown menu")
                         root.state = "statePower"
