@@ -87,9 +87,9 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             width: 300
-            height: 35
+            height: 36
             radius: 3
-            color: "#55000000"
+            color: "#212121"
 
             TextInput {
                 id: passwdInput
@@ -142,9 +142,9 @@ Item {
                     verticalCenter: parent.verticalCenter
                 }
 
-                normalImg: "icons/login_normal.png"
-                hoverImg: "icons/login_normal.png"
-                pressImg: "icons/login_press.png"
+                normalImg: "icons/login_normal.svg"
+                hoverImg: "icons/login_hover.svg"
+                pressImg: "icons/login_press.svg"
                 onClicked: {
                     glowAnimation.running = true
                     sddm.login(userNameText.text, passwdInput.text, sessionIndex)

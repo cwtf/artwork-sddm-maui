@@ -17,17 +17,17 @@ Item {
 
         Item {
             width: 100
-            height: 150
+            height: 130
 
             ImgButton {
                 id: shutdownButton
-                width: 75
-                height: 75
+                width: 74
+                height: 74
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                normalImg: "icons/powerframe/shutdown_normal.png"
-                hoverImg: "icons/powerframe/shutdown_hover.png"
-                pressImg: "icons/powerframe/shutdown_press.png"
+                normalImg: "icons/powerframe/shutdown_normal.svg"
+//                 hoverImg: "icons/powerframe/shutdown_hover.png"
+//                 pressImg: "icons/powerframe/shutdown_press.png"
                 onClicked: needShutdown()
                 KeyNavigation.right: restartButton
                 KeyNavigation.left: suspendButton
@@ -47,17 +47,17 @@ Item {
 
         Item {
             width: 100
-            height: 150
+            height: 130
 
             ImgButton {
                 id: restartButton
-                width: 75
-                height: 75
+                width: 74
+                height: 74
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                normalImg: "icons/powerframe/restart_normal.png"
-                hoverImg: "icons/powerframe/restart_hover.png"
-                pressImg: "icons/powerframe/restart_press.png"
+                normalImg: "icons/powerframe/restart_normal.svg"
+//                 hoverImg: "icons/powerframe/restart_hover.png"
+//                 pressImg: "icons/powerframe/restart_press.png"
                 onClicked: needRestart()
                 KeyNavigation.right: suspendButton
                 KeyNavigation.left: shutdownButton
@@ -77,17 +77,17 @@ Item {
 
         Item {
             width: 100
-            height: 150
+            height: 130
 
             ImgButton {
                 id: suspendButton
-                width: 75
-                height: 75
+                width: 74
+                height: 74
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                normalImg: "icons/powerframe/suspend_normal.png"
-                hoverImg: "icons/powerframe/suspend_hover.png"
-                pressImg: "icons/powerframe/suspend_press.png"
+                normalImg: "icons/powerframe/suspend_normal.svg"
+//                 hoverImg: "icons/powerframe/suspend_hover.png"
+//                 pressImg: "icons/powerframe/suspend_press.png"
                 onClicked: needSuspend()
                 KeyNavigation.right: shutdownButton
                 KeyNavigation.left: restartButton
