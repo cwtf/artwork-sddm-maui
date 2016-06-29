@@ -90,6 +90,19 @@ Item {
             height: 36
             radius: 3
             color: "#212121"
+            
+            Text {
+                    id: passwordNotice
+                    text: "Click your avatar, enter your password"
+                    color: "#424242"
+                    anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    verticalCenter: parent.verticalCenter
+                    left: parent.left
+                    leftMargin: 20
+                    }
+                    font.pointSize: 9
+                }
 
             TextInput {
                 id: passwdInput
@@ -104,6 +117,7 @@ Item {
                 selectionColor: "#a8d6ec"
                 echoMode: TextInput.Password
                 verticalAlignment: TextInput.AlignVCenter
+                
                 onFocusChanged: {
                     if (focus) {
                         color = textColor
