@@ -261,9 +261,9 @@ Rectangle {
                     height: m_powerButtonSize
                     visible: userFrame.isMultipleUsers()
 
-//                     normalImg: "icons/switchframe/userswitch_normal.png"
-//                     hoverImg: "icons/switchframe/userswitch_hover.png"
-//                     pressImg: "icons/switchframe/userswitch_press.png"
+                    normalImg: "icons/switchframe/userswitch_normal.png"
+                    hoverImg: "icons/switchframe/userswitch_hover.png"
+                    pressImg: "icons/switchframe/userswitch_press.png"
                     onClicked: {
                         console.log("Switch User...")
                         root.state = "stateUser"

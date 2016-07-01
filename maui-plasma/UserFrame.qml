@@ -33,7 +33,7 @@ Item {
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
         anchors.margins: 10
-//         normalImg: "icons/angle-left.png"
+        normalImg: "icons/angle-left.png"
         onClicked: {
             usersList.decrementCurrentIndex()
             shouldShowBG = true
@@ -119,7 +119,7 @@ Item {
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
         anchors.margins: 10
-//         normalImg: "icons/angle-right.png"
+        normalImg: "icons/angle-right.png"
         onClicked: {
             usersList.incrementCurrentIndex()
             shouldShowBG = true
