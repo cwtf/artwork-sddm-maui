@@ -53,7 +53,7 @@ Item {
         delegate: Rectangle {
             id: item
             property string iconPath: icon
-            property string userName: nameText.text
+            property string userName: name
             property bool activeBG: usersList.currentIndex === index && shouldShowBG
 
             border.width: 3
@@ -65,10 +65,10 @@ Item {
             height: 150
 
             function select() {
-                selected(name)
                 usersList.currentIndex = index
                 currentIconPath = icon
                 currentUserName = name
+                selected(name)
             }
 
             UserAvatar {
